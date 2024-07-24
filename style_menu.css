@@ -76,7 +76,7 @@
 }
 /*todo el código*/
 body {
-    background-image: url(ros.png);
+    background-image: url(img/Inicial/ros.png);
     background-size: cover;  
     background-attachment: fixed;
 }
@@ -101,8 +101,6 @@ main{
     background-color: rgba(170, 172, 112, 0.602);
 }
 
-
-}
 
  /* Estilos para el menú desplegable */
  .menu-items li.dropdown {

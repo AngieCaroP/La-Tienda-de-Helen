@@ -26,7 +26,7 @@
 .border-icon:hover{
     background-color: rgb(212, 163, 115);
     cursor: pointer;
-    color: brown;
+    color: rgb(166, 43, 43)%, 41%);
 }
 
 
@@ -62,8 +62,8 @@ header {
     width: 100%;
     height: 600px;
     background: rgb(218, 210, 153);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(133, 36%, 77%, 0.331), hsla(53, 47%, 73%, 0.525)), url(xx.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(133, 36%, 77%, 0.331), hsla(53, 47%, 73%, 0.525)), url(xx.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    background: -webkit-linear-gradient(to right, hsla(133, 36%, 77%, 0.331), hsla(53, 47%, 73%, 0.525)), url(img/Inicial/xx.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(133, 36%, 77%, 0.331), hsla(53, 47%, 73%, 0.525)), url(img/Inicial/xx.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
     background-size: cover;
     background-attachment:fixed ;
     position: relative;
@@ -163,6 +163,7 @@ main .sobre-nosotros{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
 
 .imagen-port{
@@ -395,7 +396,8 @@ a{
     /* Galeria */
 
     .imagen-port{
-        width: 44%;
+        width: 30%;
+       
     }
 
     /* Clientes */
@@ -568,9 +570,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.menu ul li:not(:last-child) {
-    margin-right: 40px; /* Ajustar espaciado horizontal */
-}
+
 
 .menu ul li a {
     display: block;
@@ -698,3 +698,5 @@ a {
     width: 100px;
     margin: 0 5px;
 }
+
+

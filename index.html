@@ -1,419 +1,453 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="shortcut icon" href="img/Inicial/Lógo La Tienda de Helen.jpg" type="LaTiendaDeHelen">
-    <link rel="stylesheet" href="a.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link
+      rel="shortcut icon"
+      href="img/Inicial/Lógo La Tienda de Helen.jpg"
+      type="LaTiendaDeHelen"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+      rel="stylesheet"
+    />
     <title>LaTiendaDeHelen</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Caveat+Brush&family=Major+Mono+Display&family=Nixie+One&family=Raleway+Dots&display=swap"
-        rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Caveat+Brush&family=Major+Mono+Display&family=Nixie+One&family=Raleway+Dots&display=swap"
+      rel="stylesheet"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <style>
-            /* Estilos CSS */
-            .menu {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0px;
-                /* Ajusta según sea necesario */
-                background-color: #f8f8f8;
-                /* Cambia el color de fondo según tu diseño */
-            }
+      <style>
+        /* Estilos CSS */
+        .menu {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px;
+          /* Ajusta según sea necesario */
+          background-color: #f8f8f8;
+          /* Cambia el color de fondo según tu diseño */
+        }
 
-            .menu-items {
-                list-style: none;
-                display: flex;
-                gap: 30px;
-                /* Espacio entre elementos del menú */
-            }
+        .menu-items {
+          list-style: none;
+          display: flex;
+          gap: 30px;
+          /* Espacio entre elementos del menú */
+        }
 
-            .menu-items li {
-                margin: 0;
-            }
+        .menu-items li {
+          margin: 0;
+        }
 
-            .menu-items li a {
-                text-decoration: none;
-                color: #333;
-                /* Cambia el color de texto según tu diseño */
-            }
+        .menu-items li a {
+          text-decoration: none;
+          color: #333;
+          /* Cambia el color de texto según tu diseño */
+        }
 
-            .logo img {
-                margin-right: 20px;
-                /* Espacio entre el logo y los elementos del menú */
-            }
+        .logo img {
+          margin-right: 20px;
+          /* Espacio entre el logo y los elementos del menú */
+        }
 
-            .textos-header {
-                text-align: justify;
-                /* Alineación del texto en el encabezado */
-                margin-top: 0px;
-                /* Ajusta según sea necesario */
-            }
+        .textos-header {
+          text-align: justify;
+          /* Alineación del texto en el encabezado */
+          margin-top: 0px;
+          /* Ajusta según sea necesario */
+        }
 
-            /* Estilos para el menú desplegable */
-            .menu-items li.dropdown {
-                position: relative;
-            }
+        /* Estilos para el menú desplegable */
+        .menu-items li.dropdown {
+          position: relative;
+        }
 
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #f8f8f8;
-                min-width: 200px;
-                z-index: 1;
-                padding: 10px;
-                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f8f8f8;
+          min-width: 200px;
+          z-index: 1;
+          padding: 10px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
 
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
 
-            .dropdown-content a {
-                display: block;
-                text-decoration: none;
-                color: #333;
-                /* Cambia el color de texto según tu diseño */
-                padding: 8px 0;
-            }
-        </style>
-        <nav class="menu">
-            <div class="logo">
-                <a href="http://127.0.0.7:5502/a.html">
-                    <img src="img/Inicial/frase.png" alt="Logo de La Tienda de Helen" width="200px" height="35px">
-                </a>
-            </div>
-            <ul class="menu-items">
-                <li><a href="http://127.0.0.7:5502/a.html">Inicio</a></li>
-                <li><a href="http://127.0.0.7:5502/servicio.html">Servicio al cliente</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Prendas</a>
-                    <div class="dropdown-content">
-                        <a href="http://127.0.0.7:5502/vestidos.html">Vestidos</a>
-                        <a href="http://127.0.0.7:5502/chaquetas.html">Chaquetas</a>
-                        <a href="http://127.0.0.7:5502/camisas.html">Camisas</a>
-                        <a href="http://127.0.0.7:5502/zapatos.html">Zapatos</a>
-                        <a href="http://127.0.0.7:5502/complementos.html">Complementos</a>
-                        <a href="http://127.0.0.7:5502/bolsos.html">Bolsos</a>
-                    </div>
-                </li>
-                <li><a href="http://127.0.0.7:5502/prueba.html">Ingresar</a></li>
-                <form class="search-form">
-                    <input type="text" id="search-input" placeholder="Buscar producto">
-                    <button type="button" id="search-button">Buscar</button>
-                </form>
-            </ul>
-        </nav>
-        <section class="textos-header">
-            <h1>La Tienda De Helen</h1>
-            <h2>Prendas que resaltan a la mujer modesta</h2>
-            
-        </section>
-        
-        <div class="wave" style="height: 150px; overflow: hidden;">
-            <img src="img/Inicial/bolsa.jpeg" alt="" class="">    
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: rgb(242, 242, 242);"></path>
-                
-            </svg>
+        .dropdown-content a {
+          display: block;
+          text-decoration: none;
+          color: #333;
+          /* Cambia el color de texto según tu diseño */
+          padding: 8px 0;
+        }
+      </style>
+      <nav class="menu">
+        <div class="logo">
+          <a href="http://127.0.0.7:5502/a.html">
+            <img
+              src="img/Inicial/frase.png"
+              alt="Logo de La Tienda de Helen"
+              width="200px"
+              height="35px"
+            />
+          </a>
         </div>
+        <ul class="menu-items">
+          <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+          <li><a href="http://127.0.0.1:5500/index_servicio.html">Servicio al cliente</a></li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Prendas</a>
+              <div class="dropdown-content">
+                  <a href="http://127.0.0.1:5500/index_vestidos.html">Vestidos</a>
+                  <a href="http://127.0.0.1:5500/index_chaquetas.html">Chaquetas</a>
+                  <a href="http://127.0.0.1:5500/index_camisas.html">Camisas</a>
+                  <a href="http://127.0.0.1:5500/index_zapatos.html">Zapatos</a>
+                  <a href="http://127.0.0.1:5500/index_complementos.html">Complementos</a>
+                  <a href="http://127.0.0.1:5500/index_bolsos.html">Bolsos</a>
+              </div>
+          </li>
+          <li><a href="http://127.0.0.1:5500/index_formulario.html">Ingresar</a></li>
+          <form class="search-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Buscar producto"
+            />
+            <button type="button" id="search-button">Buscar</button>
+          </form>
+        </ul>
+      </nav>
+      <section class="textos-header">
+        <h1>La Tienda De Helen</h1>
+        <h2>Prendas que resaltan a la mujer modesta</h2>
+      </section>
 
-
+      <div class="wave" style="height: 150px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: rgb(242, 242, 242)"
+          ></path>
+        </svg>
+      </div>
     </header>
 
     <main>
-        <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">Nosotros </h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="img/Inicial/collage.jpeg" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3><span>1</span>Sobre nosotros</h3>
-                    <p>Somos una empresa dedicada a la comercialización de prendas como vestidos,faldas,blusas modestas.
-                        Todo para que te puedas vestir de la mejor manera en un solo lugar.
-                        Hacemos envios a toda Colombia.</p>
-                    <h3><span>2</span>Nuestro propósito</h3>
-                    <p>Satisfacer la demanda que existe de prendas modestas y únicas para resaltar la belleza femenina.
-                    </p>
-                    <h3><span>3</span>Nuestros productos</h3>
-                    <p>Las prendas de La Tienda de Helen son fabricadas por mano de obra colombiana, personas que desde
-                        diferentes ciudades logran a través de sus manos y gran talento la creación de estos productos
-                        que llegarán a ustedes por intermediación de nosotros en un empaque personalizado y útil para
-                        todas ustedes.</p>
+      <section class="contenedor sobre-nosotros">
+        <h2 class="titulo">Nosotros</h2>
+        <div class="contenedor-sobre-nosotros">
+          <img src="img/Inicial/collage.jpeg" alt="" class="imagen-about-us" />
+          <div class="contenido-textos">
+            <h3><span>1</span>Sobre nosotros</h3>
+            <p>
+              Somos una empresa dedicada a la comercialización de prendas como
+              vestidos,faldas,blusas modestas. Todo para que te puedas vestir de
+              la mejor manera en un solo lugar. Hacemos envios a toda Colombia.
+            </p>
+            <h3><span>2</span>Nuestro propósito</h3>
+            <p>
+              Satisfacer la demanda que existe de prendas modestas y únicas para
+              resaltar la belleza femenina.
+            </p>
+            <h3><span>3</span>Nuestros productos</h3>
+            <p>
+              Las prendas de La Tienda de Helen son fabricadas por mano de obra
+              colombiana, personas que desde diferentes ciudades logran a través
+              de sus manos y gran talento la creación de estos productos que
+              llegarán a ustedes por intermediación de nosotros en un empaque
+              personalizado y útil para todas ustedes.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="portafolio">
+        <div class="contenedor">
+          <h2 class="titulo">Portafolio</h2>
+          <div class="galeria-port">
+            <style>
+              /* Estilo para las imágenes de la galería */
+              .imagen-port {
+                display: inline-block;
+                margin: 10px;
+                position: relative;
+                overflow: hidden;
+              }
+
+              .imagen-port img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.3s ease;
+              }
+
+              /* Estilo para el efecto hover */
+              .hover-galeria {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.7);
+                color: white;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+              }
+
+              .imagen-port:hover .hover-galeria {
+                opacity: 1;
+              }
+
+              /* Estilo para el texto dentro del efecto hover */
+              .hover-galeria p {
+                margin-top: 10px;
+              }
+
+              .hover-galeria img {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 5px;
+              }
+            </style>
+            <div class="imagen-port">
+              <a href="http://127.0.0.7:5502/vestidos.html">
+                <img src="img/Inicial/vestidos.jpeg" alt="" />
+                <div class="hover-galeria">
+                  <img src="icono1.png" alt="" />
+                  <p>Vestidos</p>
                 </div>
+              </a>
             </div>
-        </section>
-        <section class="portafolio">
-            <div class="contenedor">
-                <h2 class="titulo">Portafolio</h2>
-                <div class="galeria-port">
-                    <style>
-                        /* Estilo para las imágenes de la galería */
-                        .imagen-port {
-                            display: inline-block;
-                            margin: 10px;
-                            position: relative;
-                            overflow: hidden;
-                        }
 
-                        .imagen-port img {
-                            width: 100%;
-                            height: auto;
-                            transition: transform 0.3s ease;
-                        }
-
-                        /* Estilo para el efecto hover */
-                        .hover-galeria {
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            background: rgba(0, 0, 0, 0.7);
-                            color: white;
-                            width: 100%;
-                            height: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            opacity: 0;
-                            transition: opacity 0.3s ease;
-                        }
-
-                        .imagen-port:hover .hover-galeria {
-                            opacity: 1;
-                        }
-
-                        /* Estilo para el texto dentro del efecto hover */
-                        .hover-galeria p {
-                            margin-top: 10px;
-                        }
-
-                        .hover-galeria img {
-                            width: 50px;
-                            height: 50px;
-                            margin-bottom: 5px;
-                        }
-                    </style>
-                    <div class="imagen-port">
-                        <a href="http://127.0.0.7:5502/vestidos.html">
-                            <img src="img/Inicial/vestidos.jpeg" alt="">
-                            <div class="hover-galeria">
-                                <img src="icono1.png" alt="">
-                                <p>Vestidos</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="imagen-port">
-                        <a href="http://127.0.0.7:5502/chaquetas.html">
-                            <img src="img/Inicial/chaqueta.jpeg" alt="">
-                            <div class="hover-galeria">
-                                <img src="icono1.png" alt="">
-                                <p>Chaquetas</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="imagen-port">
-                        <a href="http://127.0.0.7:5502/camisas.html">
-                            <img src="img/Inicial/blusas.jpeg" alt="">
-                            <div class="hover-galeria">
-                                <img src="icono1.png" alt="">
-                                <p>Camisas</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="imagen-port">
-                        <a href="http://127.0.0.7:5502/zapatos.html">
-                            <img src="img/Inicial/Zapatos.jpeg" alt="">
-                            <div class="hover-galeria">
-                                <img src="icono1.png" alt="">
-                                <p>Zapatos</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="imagen-port">
-                        <a href="http://127.0.0.7:5502/complementos.html">
-                            <img src="img/Inicial/complementos.jpeg" alt="">
-                            <div class="hover-galeria">
-                                <img src="icono1.png" alt="">
-                                <p>Complementos</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="imagen-port">
-                        <a href="http://127.0.0.7:5502/bolsos.html">
-                            <img src="img/Inicial/Bolsos.jpeg" alt="">
-                            <div class="hover-galeria">
-                                <img src="icono1.png" alt="">
-                                <p>Bolsos</p>
-                            </div>
-                        </a>
-                    </div>
+            <div class="imagen-port">
+              <a href="http://127.0.0.7:5502/chaquetas.html">
+                <img src="img/Inicial/chaqueta.jpeg" alt="" />
+                <div class="hover-galeria">
+                  <img src="icono1.png" alt="" />
+                  <p>Chaquetas</p>
                 </div>
-
+              </a>
             </div>
-            
-        </section>
-        <section class="clientes contenedor">
-            <h2 class="titulo"> Outfits</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/Inicial/azul.jpeg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Vestidos</h4>
-                        <p>Ya tenemos nuevos colores 🌈
-                            Nuestro vestido HELENA lo encuentras en talla SM y ML.
-                            Únicas unidades.
-                            Pide el tuyo al 3193646648 </p>
-                    </div>
+
+            <div class="imagen-port">
+              <a href="http://127.0.0.7:5502/camisas.html">
+                <img src="img/Inicial/blusas.jpeg" alt="" />
+                <div class="hover-galeria">
+                  <img src="icono1.png" alt="" />
+                  <p>Camisas</p>
                 </div>
-                <div class="card">
-                    <img src="img/Inicial/gris.jpeg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Complementos</h4>
-                        <p>La sensación por dónde vayas.
-                            Comodidad,estilo y glamour.
-                            Outfiit completo disponible,pregunta por todas nuestras prendas al 3193646648 😌💞</p>
-                    </div>
-                </div>
+              </a>
             </div>
-        </section>
-        <section class="about-services">
-            <div class="contenedor">
-                <h2 class="titulo">Sobre nosotros</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="img/Inicial/Helen.jpeg" alt="">
-                        <h3>Sobre mi:</h3>
-                        <p>
-                            Mi nombre es Helen Dayana Soto Florez, soy tolimense, tengo 24 años y soy estudiante de
-                            Administración Pública en la ESAP.
 
-                            Este emprendimiento surge por mi amor desde muy pequeña por las faldas y vestidos y la
-                            necesidad que noté de muchas de mis amigas de obtener prendas que se adecuaran a su estilo
-                            modesto de vestir, y es por eso que decidí buscar fábricas y mayoristas que ofrecieran estás
-                            prendas y así yo poderlas comercializar a precios asequibles para todas.
-
-                        </p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/Inicial/empaque.jpeg" alt="">
-                        <h3>Nuestro empaque:</h3>
-                        <p>
-
-                            Al inicio de La Tienda de Helen las prendas las enviabamos en bolsas de papel, pero en los
-                            recorridos a cada ciudad estás llegaban muy arrugadas y mal presentadas,es por eso que
-                            cuando tuvimos la oportunidad diseñamos una bolsa de tela que ustedes pueden utilizar como
-                            cosmetiquera, o para guardar allí sus accesorios, es amigable con el medio ambiente y además
-                            deja un recuerdo de nosotros en cada cliente.
-
-                        </p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/Inicial/mo.jpeg" alt="">
-                        <h3>Nuestros proyectos:</h3>
-                        <p>
-                            Queremos no solo comercializar prendas sino también ser fabricantes de ellas y poder ofrecer
-                            una experiencia completa a nuestros clientes ofreciendo prendas personalizadas para cada
-                            ocasión.
-                            Además de ello,buscamos llegar a más mujeres , con ropa en talla grande para que ellas
-                            también tengan la oportunidad de verse hermosas sin tener que buscar en otro lugar.</p>
-                    </div>
+            <div class="imagen-port">
+              <a href="http://127.0.0.7:5502/zapatos.html">
+                <img src="img/Inicial/Zapatos.jpeg" alt="" />
+                <div class="hover-galeria">
+                  <img src="icono1.png" alt="" />
+                  <p>Zapatos</p>
                 </div>
+              </a>
             </div>
-        </section>
 
+            <div class="imagen-port">
+              <a href="http://127.0.0.7:5502/complementos.html">
+                <img src="img/Inicial/complementos.jpeg" alt="" />
+                <div class="hover-galeria">
+                  <img src="icono1.png" alt="" />
+                  <p>Complementos</p>
+                </div>
+              </a>
+            </div>
 
+            <div class="imagen-port">
+              <a href="http://127.0.0.7:5502/bolsos.html">
+                <img src="img/Inicial/Bolsos.jpeg" alt="" />
+                <div class="hover-galeria">
+                  <img src="icono1.png" alt="" />
+                  <p>Bolsos</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="clientes contenedor">
+        <h2 class="titulo">Outfits</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="img/Inicial/azul.jpeg" alt="" />
+            <div class="contenido-texto-card">
+              <h4>Vestidos</h4>
+              <p>
+                Ya tenemos nuevos colores 🌈 Nuestro vestido HELENA lo
+                encuentras en talla SM y ML. Únicas unidades. Pide el tuyo al
+                3193646648
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/Inicial/gris.jpeg" alt="" />
+            <div class="contenido-texto-card">
+              <h4>Complementos</h4>
+              <p>
+                La sensación por dónde vayas. Comodidad,estilo y glamour.
+                Outfiit completo disponible,pregunta por todas nuestras prendas
+                al 3193646648 😌💞
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-services">
+        <div class="contenedor">
+          <h2 class="titulo">Sobre nosotros</h2>
+          <div class="servicio-cont">
+            <div class="servicio-ind">
+              <img src="img/Inicial/Helen.jpeg" alt="" />
+              <h3>Sobre mi:</h3>
+              <p>
+                Mi nombre es Helen Dayana Soto Florez, soy tolimense, tengo 24
+                años y soy estudiante de Administración Pública en la ESAP. Este
+                emprendimiento surge por mi amor desde muy pequeña por las
+                faldas y vestidos y la necesidad que noté de muchas de mis
+                amigas de obtener prendas que se adecuaran a su estilo modesto
+                de vestir, y es por eso que decidí buscar fábricas y mayoristas
+                que ofrecieran estás prendas y así yo poderlas comercializar a
+                precios asequibles para todas.
+              </p>
+            </div>
+            <div class="servicio-ind">
+              <img src="img/Inicial/empaque.jpeg" alt="" />
+              <h3>Nuestro empaque:</h3>
+              <p>
+                Al inicio de La Tienda de Helen las prendas las enviabamos en
+                bolsas de papel, pero en los recorridos a cada ciudad estás
+                llegaban muy arrugadas y mal presentadas,es por eso que cuando
+                tuvimos la oportunidad diseñamos una bolsa de tela que ustedes
+                pueden utilizar como cosmetiquera, o para guardar allí sus
+                accesorios, es amigable con el medio ambiente y además deja un
+                recuerdo de nosotros en cada cliente.
+              </p>
+            </div>
+            <div class="servicio-ind">
+              <img src="img/Inicial/mo.jpeg" alt="" />
+              <h3>Nuestros proyectos:</h3>
+              <p>
+                Queremos no solo comercializar prendas sino también ser
+                fabricantes de ellas y poder ofrecer una experiencia completa a
+                nuestros clientes ofreciendo prendas personalizadas para cada
+                ocasión. Además de ello,buscamos llegar a más mujeres , con ropa
+                en talla grande para que ellas también tengan la oportunidad de
+                verse hermosas sin tener que buscar en otro lugar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
+      <div class="contenedor-iconos">
+        <a
+          href="https://api.whatsapp.com/message/N5B4G7G7US5RJ1?autoload=1&app_absent=0"
+          class="iconos"
+        >
+          <div class="border-icon">
+            <i class="bx bxl-whatsapp"></i>
+          </div>
+        </a>
+        <a
+          href="https://www.instagram.com/_latiendadehelen/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR2sfv-HmgAQXkWtYaEaQn3X8gL8cH9kd8tBiwh9GfgPVfzwje51hjwEww4"
+          class="iconos"
+        >
+          <div class="border-icon">
+            <i class="bx bxl-instagram"></i>
+          </div>
+        </a>
+        <a
+          href="https://www.tiktok.com/@_latiendadehelen?_t=8caKUq1zE78&_r=1"
+          class="iconos"
+        >
+          <div class="border-icon">
+            <i class="bx bxl-tiktok"></i>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/latiendadhelen" class="iconos">
+          <div class="border-icon">
+            <i class="bx bxl-facebook"></i>
+          </div>
+        </a>
+      </div>
 
-        <div class="contenedor-iconos">
-            <a href="https://api.whatsapp.com/message/N5B4G7G7US5RJ1?autoload=1&app_absent=0" class="iconos">
-                <div class="border-icon">
-                    <i class='bx bxl-whatsapp'></i>
-                </div>
-            </a>
-            <a href="https://www.instagram.com/_latiendadehelen/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR2sfv-HmgAQXkWtYaEaQn3X8gL8cH9kd8tBiwh9GfgPVfzwje51hjwEww4"
-                class="iconos">
-                <div class="border-icon">
-                    <i class='bx bxl-instagram'></i>
-                </div>
-            </a>
-            <a href="https://www.tiktok.com/@_latiendadehelen?_t=8caKUq1zE78&_r=1" class="iconos">
-                <div class="border-icon">
-                    <i class='bx bxl-tiktok'></i>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/latiendadhelen" class="iconos">
-                <div class="border-icon">
-                    <i class='bx bxl-facebook'></i>
-                </div>
-            </a>
-        </div>
+      <ul class="static__menu">
+        <h2>Políticas</h2>
+        <ul class="static__submenu">
+          <li>
+            <a href="http://127.0.0.1:5500/index_ptcTyc.html">Términos y Condiciones</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index_ptcAv.html">Aviso de Privacidad</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index_ptcPe.html">Política de Protección de Datos</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index_ptcUc.html">Política de Uso de Cookies</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index_ptcDvn.html">Política Comercial de Cambios</a>
+          </li>
+          <li>
+            <a href="http://127.0.0.1:5500/index_ptcPp.html">Promociones y Eventos</a>
+          </li>
 
-        <ul class="static__menu">
-            <h2>Políticas</h2>
-            <ul class="static__submenu">
-                <li>
-                    <a href="http://127.0.0.7:5502/ptcTyc.html">Términos y Condiciones</a>
-                </li>
-                <li>
-                    <a href="http://127.0.0.7:5502/ptcAv.html">Aviso de Privacidad</a>
-                </li>
-                <li>
-                    <a href="http://127.0.0.7:5502/ptcPe.html">Política de Protección de Datos</a>
-                </li>
-                <li>
-                    <a href="http://127.0.0.7:5502/ptcUc.html">Política de Uso de Cookies</a>
-                </li>
-                <li>
-                    <a href="http://127.0.0.7:5502/ptcDvn.html">Política Comercial de Cambios</a>
-                </li>
-                <li>
-                    <a href="http://127.0.0.7:5502/ptcPp.html">Promociones y Eventos</a>
-                </li>
-
-                <!-- <li><a href="/politicas/giftcard" style="color: red;">Giftcard <i class="fas fa-gift-card" style="color: red;"></i> </a></li> -->
-            </ul>
+          <!-- <li><a href="/politicas/giftcard" style="color: red;">Giftcard <i class="fas fa-gift-card" style="color: red;"></i> </a></li> -->
         </ul>
+      </ul>
 
-        <div clas="row">
-            <h2>Medios de pago</h2>
-            <div class="medios">
-                <img src="img/Inicial/bancolombia.png">
-                <img src="img/Inicial/daviplata.png">
-                <img src="img/Inicial/nequi.png">
-            </div>
-
+      <div clas="row">
+        <h2>Medios de pago</h2>
+        <div class="medios">
+          <img src="img/Inicial/bancolombia.png" />
+          <img src="img/Inicial/daviplata.png" />
+          <img src="img/Inicial/nequi.png" />
         </div>
+      </div>
 
-        <h2 class="titulo-final">&copy; La Tienda de Helen | Envíos a toda Colombia</h2>
-
+      <h2 class="titulo-final">
+        &copy; La Tienda de Helen | Envíos a toda Colombia
+      </h2>
     </footer>
 
-    <script src="a.js"></script>
-</body>
-
+    <script src="script_estilo.js"></script>
+  </body>
 </html>
