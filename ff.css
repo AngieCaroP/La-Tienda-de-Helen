@@ -1,0 +1,132 @@
+/* Estilos menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ajusta el índice z para asegurarte de que esté encima de otros elementos si es necesario */
+    /* Otros estilos que desees agregar */
+}
+
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu ul li a:hover {
+    color: rgb(97, 30, 30); /* Cambio de color al pasar el cursor */
+    transition: color 0.3s; /* Animación de color */
+    box-shadow: 0 0 5px rgb(97, 30, 30); /* Efecto de sombra al pasar el cursor */
+}
+
+.logo a {
+    display: block;
+    /* Para que el enlace abarque todo el tamaño de la imagen */
+}
+
+.logo img {
+    width: 200px;
+    height: 35px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/*página*/
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Roboto;
+}
+/*todo el código*/
+body {
+    background-image: url(ros.png);
+    background-size: cover;  
+    background-attachment: fixed;
+}
+/*diseño de página*/
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    
+}
+/*contenedor*/
+.contenedor_todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+/*caja trasera*/
+.caja_trasera{
+    width: 100%;
+    padding:80px 80px;    
+    background-color: rgba(170, 172, 112, 0.602);
+}
+
+
+}
+
+ /* Estilos para el menú desplegable */
+ .menu-items li.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    min-width: 200px;
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    /* Cambia el color de texto según tu diseño */
+    padding: 8px 0;
+}

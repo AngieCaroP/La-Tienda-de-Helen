@@ -1,0 +1,122 @@
+
+/* Efectos de movimiento */
+.menu ul li:nth-child(odd) {
+    transform: translateX(20px);
+}
+
+.menu ul li:nth-child(even) {
+    transform: translateX(-20px);
+}
+header {
+    background-color: #F2F2F2;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin: 0;
+}
+
+.menu ul li:first-child {
+    margin-right: auto;
+}
+
+/*pie de pagina */
+/*iconos*/
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.border-icon {
+    height: 1px;
+    width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin rgb(171, 97, 23);
+    border-radius: 25%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    background-color: rgba(212, 163, 115, 0.718);
+}
+
+.border-icon:hover {
+    background-color: rgb(212, 163, 115);
+    cursor: pointer;
+    color: brown;
+}
+
+footer {
+    background: rgb(65, 65, 65);
+    padding: 30px 0;
+    
+    background-color: #333;
+    text-align: center;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contenedor-iconos {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+h2{
+    color: rgb(149, 139, 139);
+    font-size: 20px;
+    text-align:center;
+    margin-bottom: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+ li {
+    color: rgb(15, 13, 13);
+    font-size: 15px;
+    text-align:center;
+    margin-bottom: 60px;
+    margin: 0;
+    padding: 0; 
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.medios {
+    width: 10px;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.medios img {
+    width: 100px;
+    margin: 0 5px;
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vestidos</title>
+    <link rel="stylesheet" href="ff.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link href='https:unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="Lógo La Tienda de Helen.jpg" type="LaTiendaDeHelen">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js" async></script>
+</head>
+
+<body>
+    <style>
+
+    </style>
+
+    <header>
+        <nav class="menu">
+
+
+            <div class="logo">
+                <a href="http://127.0.0.7:5502/a.html">
+                    <img src="frase.png" alt="Logo de La Tienda de Helen">
+                </a>
+            </div>
+            <ul>
+                <li><a href="http://127.0.0.7:5502/a.html">Inicio</a></li>
+                <li><a href="http://127.0.0.7:5502/servicio.html">Servicio al cliente</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Prendas</a>
+                    <div class="dropdown-content">
+                        <a href="http://127.0.0.7:5502/vestidos.html">Vestidos</a>
+                        <a href="http://127.0.0.7:5502/chaquetas.html">Chaquetas</a>
+                        <a href="http://127.0.0.7:5502/camisas.html">Camisas</a>
+                        <a href="http://127.0.0.7:5502/zapatos.html">Zapatos</a>
+                        <a href="http://127.0.0.7:5502/complementos.html">Complementos</a>
+                        <a href="http://127.0.0.7:5502/bolsos.html">Bolsos</a>
+                    </div>
+                </li>
+                <li><a href="http://127.0.0.7:5502/prueba.html">Ingresar</a></li>
+                <form class="search-form">
+                    <input type="text" placeholder="Buscar">
+                    <button type="submit">Buscar</button>
+                </form>
+                </li>
+            </ul>
+
+
+        </nav>
+    </header>
+
+
+
+    <body>
+        <header>
+            <h1>Vestidos</h1>
+        </header>
+        <section class="contenedor">
+            <!-- Contenedor de elementos -->
+            <div class="contenedor-items">
+                <div class="item">
+                    <span class="titulo-item">Vestido Largo De Tiras Con Cinturon</span>
+                    <img src="-elaco-producto-Vestidos-NEGRO-E141108-1.webp" alt="" class="img-item">
+                    <span class="precio-item">$175.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Vestido Largo Dama De Tiras</span>
+                    <img src="-elaco-producto-Vestidos-CAKI-E141250-1.webp" alt="" class="img-item">
+                    <span class="precio-item">$205.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Vestido Largo Ajustado Tipo Sirena</span>
+                    <img src="-elaco-producto-Vestidos-ROJOPRADA-E141105-1.webp" alt="" class="img-item">
+                    <span class="precio-item">$135.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Vestido Largo Ajustado Tipo Sirena</span>
+                    <img src="-elaco-producto-Vestidos-NEGRO-E141105A-1.webp" alt="" class="img-item">
+                    <span class="precio-item">$118.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+
+            </div>
+            <!-- Carrito de Compras -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Tu Carrito</h2>
+                </div>
+
+                <div class="carrito-items">
+                    <a href="http://127.0.0.7:5502/Carrito.html"></a>
+                    <!-- 
+                    <div class="carrito-item">
+                        <img src="img/boxengasse.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Box Engasse</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-item-precio">$15.000,00</span>
+                        </div>
+                       <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                       </span>
+                    </div>
+                    <div class="carrito-item">
+                        <img src="img/skinglam.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Skin Glam</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-item-precio">$18.000,00</span>
+                        </div>
+                       <button class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                       </button>
+                    </div>
+                     -->
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                </div>
+            </div>
+        </section>
+    </body>
+
+
+    <br>
+    <footer>
+
+        <style>
+            /* Estilos para el pie de página */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f8f8f8;
+                /* Color de fondo suave */
+            }
+
+            /* Contenedor principal del pie de página */
+            footer {
+                background-color: #e6e6e6;
+                /* Color de fondo pastel */
+                padding: 20px 0;
+                text-align: center;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-start;
+                /* Alineación vertical al inicio */
+            }
+
+            /* Estilo al pasar el cursor sobre los enlaces del pie de página */
+            footer a:hover {
+                color: rgb(97, 30, 30);
+                cursor: pointer;
+            }
+
+            footer i:hover {
+                color: rgb(97, 30, 30);
+                cursor: pointer;
+            }
+
+            /* Columnas del pie de página */
+            .columna {
+                flex: 1;
+                max-width: 300px;
+                margin: 10px;
+                text-align: left;
+                /* Alineación del texto a la izquierda */
+            }
+
+            /* Estilos para los íconos de redes sociales */
+            .iconos {
+                display: block;
+                /* Mostrar los íconos en bloques */
+                margin: 10px 0;
+                font-size: 20px;
+                color: 0 0 5px rgb(97, 30, 30);
+                /* Color de íconos */
+                text-decoration: none;
+                transition: color 0.3s ease-in-out;
+
+            }
+
+            .iconos:hover {
+                color: #888;
+                /* Cambio de color al pasar el mouse */
+            }
+
+            /* Estilos para la lista de políticas */
+            .static__menu {
+                list-style: none;
+                text-align: left;
+                margin-top: 20px;
+            }
+
+            .static__menu h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #555;
+                /* Color de títulos */
+            }
+
+            .static__submenu {
+                padding: 0;
+            }
+
+            .static__submenu b {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .static__submenu a {
+                text-decoration: none;
+                color: #777;
+                /* Color de enlaces */
+                font-size: 14px;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            /* Estilos para los medios de pago */
+            .medios {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .medios img {
+                width: 100px;
+                margin: 0 0px;
+            }
+
+            /* Estilos para el texto final */
+            .titulo-final {
+                margin-top: 20px;
+                font-size: 14px;
+                color: #555;
+                /* Color del texto final */
+            }
+
+            /* Estilos para las etiquetas <b> */
+            b {
+                font-weight: bold;
+                /* Negrita */
+                color: #333;
+                /* Color de texto */
+                font-size: 16px;
+                /* Tamaño de letra */
+                font-style: italic
+            }
+
+            /* Estilos para las etiquetas <i> */
+            i {
+                font-style: italic;
+                /* Itálica */
+                color: #555;
+                /* Color de texto */
+                font-size: 14px;
+                /* Tamaño de letra */
+            }
+
+            /* Estilos para las etiquetas <h2> */
+            h2 {
+                font-size: 24px;
+                /* Tamaño de letra */
+                color: #000000;
+                /* Color de texto */
+                margin-bottom: 10px;
+                /* Margen inferior */
+            }
+
+            /* Estilos para las etiquetas <b> */
+            .static__submenu b {
+                font-weight: bold;
+                /* Negrita */
+                color: #777;
+                /* Color de texto */
+                font-size: 14px;
+                /* Tamaño de letra */
+                display: inline-block;
+                /* Para aplicar box-shadow */
+                transition: box-shadow 0.3s ease;
+                /* Transición para la animación */
+            }
+
+            .static__submenu b:hover {
+                box-shadow: 0 0 5px rgba(97, 30, 30, 0.8);
+                /* Efecto de cuadro al pasar el cursor */
+            }
+        </style>
+
+        <div class="columna">
+            <h2>Redes Sociales</h2>
+            <a href="https://api.whatsapp.com/message/N5B4G7G7US5RJ1?autoload=1&app_absent=0" class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-whatsapp'> WhatsApp</i>
+                </div>
+
+            </a>
+            <a href="https://www.instagram.com/_latiendadehelen/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR2sfv-HmgAQXkWtYaEaQn3X8gL8cH9kd8tBiwh9GfgPVfzwje51hjwEww4"
+                class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'> Instagram </i>
+                </div>
+            </a>
+            <a href="https://www.tiktok.com/@_latiendadehelen?_t=8caKUq1zE78&_r=1" class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-tiktok'> TikTok </i>
+                </div>
+
+            </a>
+            <a href="https://www.facebook.com/latiendadhelen" class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-facebook'> Facebook </i>
+                </div>
+            </a>
+        </div>
+
+        </div>
+
+        <div class="columna">
+            <h2>Políticas</h2>
+            <ul class="static__menu">
+                <ul class="static__menu">
+                    <ul class="static__submenu">
+                        <b>
+                            <a href="http://127.0.0.7:5502/ptcTyc.html">Términos y Condiciones</a>
+                        </b>
+                        <br>
+                        <b>
+                            <a href="http://127.0.0.7:5502/ptcAv.html">Aviso de Privacidad</a>
+                        </b>
+
+                        <b>
+                            <a href="http://127.0.0.7:5502/ptcPe.html">Política de Protección de Datos</a>
+                        </b>
+
+                        <b>
+                            <a href="http://127.0.0.7:5502/ptcUc.html">Política de Uso de Cookies</a>
+                        </b>
+
+                        <b>
+                            <a href="http://127.0.0.7:5502/ptcDvn.html">Política Comercial de Cambios</a>
+                        </b>
+
+                        <b>
+                            <a href="http://127.0.0.7:5502/ptcPp.html">Promociones y Eventos</a>
+                            <!-- <li><a href="/politicas/giftcard" style="color: red;">Giftcard <i class="fas fa-gift-card" style="color: red;"></i> </a></li> -->
+                    </ul>
+                </ul>
+        </div>
+        <div class="columna">
+            <div clas="row">
+                <h2>Medios de pago</h2>
+                <div class="medios">
+                    <img src="bancolombia.png">
+                    <img src="daviplata.png">
+                    <img src="nequi.png">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="titulo-final">&copy; La Tienda de Helen | Envíos a toda Colombia</h2>
+
+    </footer>
+
+
+</body>
+
+</html>
