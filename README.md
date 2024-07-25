@@ -32,9 +32,8 @@
 
 - **Carolina Pantoja**
 - [LinkedIn](https://www.linkedin.com/in/carolina-pantoja-716184144)
-- **Formación:** Java Orientado a Objetos G6 - ONE
-- **Alura Latam**
-- **Oracle Next Education**
+- **Formación:** SENA 
+- **Análisis y desarrollo de software**
 
 
 ¡Gracias por tu interés en **Tienda de Helen - Ropa Femenina**! 🌸👠
